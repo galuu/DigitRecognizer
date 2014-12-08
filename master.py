@@ -68,9 +68,9 @@ plt.show()
 
 ## Model 1: linearSVC one-vs-rest appraoch - 85% accuracy, relatively little time
 
-classifier2=svm.LinearSVC()
-classifier2.fit(train_data[0::,1::], train_data[0::,0])
-predicted=classifier2.predict(test_data)
+classifier1=svm.LinearSVC()
+classifier1.fit(train_data[0::,1::], train_data[0::,0])
+predicted=classifier1.predict(test_data)
 num_obs=np.size(test_data[0::,0])
 
 prediction_file=open('Documents/SideProjects/Projects/DigitRecognizer/submission2.csv', 'wb')            #open a link
